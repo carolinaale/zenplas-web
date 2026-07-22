@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zenplas — Madera Plástica Premium | Decks · Cercos · Revestimientos</title>
-  <meta name="description" content="Listones de plástico reciclado para decks, fachadas, cercos y pérgolas. Sin mantenimiento, sin pintura, para siempre. Bernal Oeste, Buenos Aires.">
+  <title>Zenplas — Madera Plástica | Decks y cercos sin mantenimiento (AMBA)</title>
+  <meta name="description" content="Madera plástica 100% reciclada para decks, cercos y pérgolas. Cero mantenimiento. Medición y cotización en el día en AMBA y GBA.">
+  <meta property="og:title" content="Zenplas — Madera Plástica | Decks y cercos sin mantenimiento (AMBA)">
+  <meta property="og:description" content="Madera plástica 100% reciclada para decks, cercos y pérgolas. Cero mantenimiento. Medición y cotización en el día en AMBA y GBA.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zenplasmaderaplastica.com/">
+  <meta property="og:image" content="https://zenplasmaderaplastica.com/assets/logo/zenpng.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,400;1,700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -62,20 +67,21 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--verde);
+      background: #25D366;   /* verde WhatsApp — decisión dueña 22/07/2026 */
       color: #fff;
       font-family: 'Open Sans', sans-serif;
-      font-weight: 600;
-      font-size: 0.95rem;
-      padding: 14px 28px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 17px 36px;
       border-radius: 50px;
       text-decoration: none;
       transition: var(--transition);
       cursor: pointer;
       border: none;
       white-space: nowrap;
+      box-shadow: 0 6px 20px rgba(37,211,102,0.30);
     }
-    .btn-wa:hover { background: #245c43; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,106,79,0.35); }
+    .btn-wa:hover { background: #1DA851; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(37,211,102,0.45); }
     .btn-wa svg { flex-shrink: 0; }
     .section-pad { padding: 96px 24px; }
     .container { max-width: 1200px; margin: 0 auto; }
@@ -1023,6 +1029,258 @@
     @media (max-width: 480px) {
       .wa-float { bottom: 20px; right: 20px; }
     }
+
+    /* ─── HERO PRE-CALIFICACIÓN ─── */
+    .hero-prequal {
+      margin-top: 18px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      color: rgba(248,245,240,0.75);
+    }
+
+    /* ─── IMPACTO: CONTADORES (sección llamativa — decisión dueña 22/07/2026) ─── */
+    #impacto {
+      background: linear-gradient(135deg, #2D6A4F 0%, #40916C 55%, #52B788 100%);
+      padding: 88px 24px;
+      text-align: center;
+    }
+    .impacto-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1080px;
+      margin: 0 auto 48px;
+    }
+    .impacto-card {
+      background: #FFFFFF;
+      border-radius: 16px;
+      padding: 56px 24px 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.22);
+    }
+    .impacto-num {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: clamp(60px, 7vw, 96px);
+      line-height: 1;
+      color: var(--verde);
+      margin-bottom: 16px;
+      font-variant-numeric: tabular-nums;
+    }
+    .impacto-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--carbon);
+      line-height: 1.5;
+      max-width: 220px;
+    }
+    @media (max-width: 768px) {
+      .impacto-grid { grid-template-columns: 1fr; }
+      .impacto-card { padding: 40px 24px 36px; }
+    }
+
+    /* ─── CÓMO FUNCIONA ─── */
+    #como-funciona { background: var(--carbon-deep); }
+    .pasos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 56px 0 48px;
+    }
+    .paso-card {
+      background: #1a1a1a;
+      border: 1px solid rgba(200,169,110,0.14);
+      border-radius: var(--radius);
+      padding: 40px 32px;
+      position: relative;
+    }
+    .paso-num {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 2.6rem;
+      color: var(--verde-c);
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+    .paso-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blanco);
+      margin-bottom: 10px;
+    }
+    .paso-desc {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: rgba(248,245,240,0.6);
+    }
+    @media (max-width: 768px) {
+      .pasos-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ─── OBJECIÓN PRECIO ─── */
+    #precio { background: #141414; }
+    .precio-box {
+      max-width: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .precio-box .section-headline { margin: 16px 0 24px; }
+    .precio-box p {
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(248,245,240,0.75);
+      margin-bottom: 20px;
+    }
+    .precio-box strong { color: var(--dorado); font-weight: 700; }
+
+    /* ─── STICKY CTA MOBILE ─── */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 950;
+      padding: 12px 16px calc(12px + env(safe-area-inset-bottom));
+      background: rgba(17,17,17,0.96);
+      backdrop-filter: blur(8px);
+      border-top: 1px solid rgba(200,169,110,0.2);
+      transform: translateY(110%);
+      transition: transform 0.35s ease;
+    }
+    .sticky-cta.show { transform: translateY(0); }
+    .sticky-cta .btn-wa { width: 100%; justify-content: center; font-size: 0.9rem; }
+    @media (max-width: 768px) {
+      .sticky-cta { display: block; }
+      .wa-float { bottom: 88px; }
+      .wa-float-label { display: none; }
+    }
+
+    /* ─── MODAL FORMULARIO ─── */
+    .zp-modal-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 1200;
+      background: rgba(0,0,0,0.72);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .zp-modal-overlay.open { display: flex; }
+    .zp-modal {
+      background: #1a1a1a;
+      border: 1px solid rgba(200,169,110,0.25);
+      border-radius: 16px;
+      width: 100%;
+      max-width: 440px;
+      max-height: 92vh;
+      overflow-y: auto;
+      padding: 36px 32px 32px;
+      position: relative;
+      animation: zpModalIn 0.28s ease;
+    }
+    @keyframes zpModalIn {
+      from { opacity: 0; transform: translateY(24px) scale(0.98); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .zp-modal-close {
+      position: absolute;
+      top: 14px; right: 16px;
+      background: none;
+      border: none;
+      color: rgba(248,245,240,0.5);
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+      padding: 6px;
+    }
+    .zp-modal-close:hover { color: var(--blanco); }
+    .zp-modal h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--blanco);
+      margin-bottom: 6px;
+    }
+    .zp-modal-sub {
+      font-size: 0.9rem;
+      color: rgba(248,245,240,0.6);
+      margin-bottom: 24px;
+    }
+    .zp-field { margin-bottom: 16px; }
+    .zp-field label {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: rgba(248,245,240,0.7);
+      margin-bottom: 6px;
+    }
+    .zp-field input, .zp-field select {
+      width: 100%;
+      background: #111;
+      border: 1px solid rgba(200,169,110,0.25);
+      border-radius: 8px;
+      color: var(--blanco);
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1rem;
+      padding: 12px 14px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .zp-field input:focus, .zp-field select:focus { border-color: var(--verde-c); }
+    .zp-field select { appearance: none; -webkit-appearance: none; cursor: pointer; }
+    .zp-form-error {
+      display: none;
+      color: #e07979;
+      font-size: 0.85rem;
+      margin-bottom: 12px;
+    }
+    .zp-form-error.show { display: block; }
+    .zp-modal .btn-wa { width: 100%; justify-content: center; margin-top: 8px; }
+    .zp-modal .btn-wa:disabled { opacity: 0.6; cursor: wait; transform: none; }
+
+    /* ─── BONO 5% (visible por defecto; el JS lo oculta si venció o se usó) ─── */
+    .zp-bono {
+      background: rgba(37,211,102,0.10);
+      border: 1px solid rgba(37,211,102,0.45);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .zp-bono-copy {
+      font-size: 0.85rem;
+      color: var(--blanco);
+      line-height: 1.5;
+      margin-bottom: 6px;
+    }
+    .zp-bono-copy strong { color: var(--verde-c); }
+    .zp-bono-timer {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--verde-c);
+      font-variant-numeric: tabular-nums;
+    }
+    .zp-bono-registrado {
+      display: none; /* el JS lo muestra cuando el bono ya se usó */
+      font-size: 0.85rem;
+      color: var(--verde-c);
+      margin-bottom: 20px;
+      text-align: center;
+    }
   </style>
 
   <!-- Meta Pixel Code -->
@@ -1048,7 +1306,7 @@
 <!-- ─── NAVBAR ─── -->
 <nav id="navbar" role="navigation" aria-label="Navegación principal">
   <a href="#hero" class="nav-logo" aria-label="Zenplas inicio">
-    <img src="assets/logo/zenpng.png" alt="Zenplas — Madera Plástica Premium">
+    <img src="assets/logo/zenpng.png" alt="Zenplas — Madera Plástica">
   </a>
   <ul class="nav-links">
     <li><a href="#beneficios">Beneficios</a></li>
@@ -1059,10 +1317,10 @@
     <li><a href="#contacto">Contacto</a></li>
   </ul>
   <div class="nav-cta">
-    <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" class="btn-wa" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto" style="font-size:0.85rem;padding:12px 20px;">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      Consultanos
-    </a>
+      Quiero presupuestar mi proyecto
+    </button>
   </div>
   <button class="hamburger" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
     <span></span><span></span><span></span>
@@ -1078,7 +1336,7 @@
   <a href="#galeria" onclick="closeMobileMenu()">Trabajos</a>
   <a href="vallasreductoresdevelocidad/">Vallas</a>
   <a href="#contacto" onclick="closeMobileMenu()">Contacto</a>
-  <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" target="_blank" rel="noopener" style="color:var(--verde-c);">Consultanos →</a>
+  <a href="#" data-zp-open-form onclick="closeMobileMenu()" style="color:var(--verde-c);">Quiero presupuestar mi proyecto →</a>
 </div>
 
 <!-- ─── HERO ─── -->
@@ -1089,16 +1347,16 @@
     <div class="hero-slide-bg" style="background-image: url('assets/trabajos-realizados/decks/Deck%20con%20mesa%202.webp');" role="img" aria-label="Deck de madera plástica Zenplas"></div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <p class="hero-overline">Madera Plástica Premium</p>
+      <p class="hero-overline">Madera Plástica 100% Reciclada</p>
       <h1 class="hero-headline">El exterior que<br>dura décadas.</h1>
       <p class="hero-sub">La belleza natural de la madera, sin ninguno de sus problemas. Para siempre.</p>
       <div class="hero-ctas">
-        <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" class="btn-wa" target="_blank" rel="noopener" aria-label="Pedir presupuesto por WhatsApp">
+        <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Pedí tu presupuesto
-        </a>
-        <a href="#galeria" class="btn-outline">Ver trabajos realizados</a>
+          Quiero presupuestar mi proyecto
+        </button>
       </div>
+      <p class="hero-prequal">Instalamos en AMBA y GBA · Medición y cotización en el día</p>
     </div>
   </div>
 
@@ -1114,12 +1372,12 @@
       <h2 class="hero-headline" style="font-size: clamp(2.2rem, 5.5vw, 4.4rem);">Instalado en<br>48 horas.</h2>
       <p class="hero-sub">Tu deck, cerco o revestimiento listo en tiempo récord.<br>Sin obra, sin demolición, sin esperas.</p>
       <div class="hero-ctas">
-        <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" class="btn-wa" target="_blank" rel="noopener" aria-label="Pedir presupuesto por WhatsApp">
+        <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          Consultá disponibilidad
-        </a>
-        <a href="#aplicaciones" class="btn-outline">Ver aplicaciones</a>
+          Quiero presupuestar mi proyecto
+        </button>
       </div>
+      <p class="hero-prequal">Instalamos en AMBA y GBA · Medición y cotización en el día</p>
     </div>
   </div>
 
@@ -1135,25 +1393,55 @@
   </div>
 </section>
 
-<!-- ─── NÚMEROS ─── -->
-<section id="valor" aria-label="Propuesta de valor Zenplas">
-  <div class="container">
-    <div class="valor-grid">
-      <div class="valor-item reveal">
-        <div class="valor-number">0</div>
-        <div class="valor-label">Mantenimiento</div>
-        <p class="valor-desc">Sin pintura, sin selladores, sin tratamientos. Nunca más.</p>
+<!-- ─── IMPACTO: CONTADORES ─── -->
+<section id="impacto" aria-label="Zenplas en números">
+  <div class="impacto-grid">
+    <div class="impacto-card reveal">
+      <div class="impacto-num zp-counter" data-from="0" data-to="982">0</div>
+      <div class="impacto-label">proyectos ya eligieron Zenplas</div>
+    </div>
+    <div class="impacto-card reveal reveal-delay-1">
+      <div class="impacto-num zp-counter" data-from="100" data-to="0" data-prefix="$">$100</div>
+      <div class="impacto-label">en mantenimiento. Para siempre.</div>
+    </div>
+    <div class="impacto-card reveal reveal-delay-2">
+      <div class="impacto-num zp-counter" data-from="0" data-to="10">0</div>
+      <div class="impacto-label">años de garantía</div>
+    </div>
+  </div>
+  <div class="reveal reveal-delay-2">
+    <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto" style="font-size:1.2rem;padding:20px 48px;">
+      Quiero presupuestar mi proyecto
+    </button>
+  </div>
+</section>
+
+<!-- ─── CÓMO FUNCIONA ─── -->
+<section id="como-funciona" class="section-pad" aria-label="Cómo funciona el proceso Zenplas">
+  <div class="container" style="text-align:center;">
+    <span class="overline reveal">Así de simple</span>
+    <h2 class="section-headline reveal" style="margin-top:14px;">De la consulta a tu exterior nuevo<br>en tres pasos.</h2>
+    <div class="pasos-grid">
+      <div class="paso-card reveal">
+        <div class="paso-num">1</div>
+        <div class="paso-title">Escribinos por WhatsApp</div>
+        <p class="paso-desc">Contanos tu proyecto en dos minutos. Te respondemos en el día.</p>
       </div>
-      <div class="valor-item reveal reveal-delay-1">
-        <div class="valor-number">100%</div>
-        <div class="valor-label">Plástico reciclado</div>
-        <p class="valor-desc">Fabricado con material reciclado. Construcción que cuida el planeta.</p>
+      <div class="paso-card reveal reveal-delay-1">
+        <div class="paso-num">2</div>
+        <div class="paso-title">Medimos y cotizamos en el día</div>
+        <p class="paso-desc">Coordinamos la medición y te enviamos la cotización sin vueltas.</p>
       </div>
-      <div class="valor-item reveal reveal-delay-2">
-        <div class="valor-number">∞</div>
-        <div class="valor-label">Vida útil</div>
-        <p class="valor-desc">Décadas sin degradación ante el clima, la humedad y el sol.</p>
+      <div class="paso-card reveal reveal-delay-2">
+        <div class="paso-num">3</div>
+        <div class="paso-title">Instalado en 48 horas</div>
+        <p class="paso-desc">Sin obra ni demolición, en proyectos estándar. Llegás y lo disfrutás.</p>
       </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
+        Quiero presupuestar mi proyecto
+      </button>
     </div>
   </div>
 </section>
@@ -1224,10 +1512,10 @@
   <div class="container" style="text-align:center;">
     <h2 class="section-headline" style="color:#fff;margin-bottom:12px;font-size:clamp(1.6rem,3vw,2.4rem);">¿Listo para transformar tu espacio exterior?</h2>
     <p style="color:rgba(255,255,255,0.75);margin-bottom:32px;">Hablemos. Te asesoramos sin compromiso y te enviamos presupuesto en el día.</p>
-    <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" class="btn-wa-light" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="#2D6A4F" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-      Escribinos ahora
-    </a>
+    <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Quiero presupuestar mi proyecto
+    </button>
   </div>
 </div>
 
@@ -1263,7 +1551,7 @@
         <div class="app-overlay">
           <span class="app-label">Estructuras</span>
           <div class="app-name">Pérgolas y Muebles</div>
-          <p class="app-desc">Estructuras que aguantan el tiempo. Diseño premium, cero deterioro.</p>
+          <p class="app-desc">Estructuras que aguantan el tiempo. Diseño que impacta, cero deterioro.</p>
         </div>
       </div>
 
@@ -1276,6 +1564,21 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- ─── OBJECIÓN PRECIO ─── -->
+<section id="precio" class="section-pad" aria-label="Comparación de costo con la madera">
+  <div class="precio-box">
+    <span class="overline reveal">Hablemos de plata</span>
+    <h2 class="section-headline reveal">¿Es más caro que la madera?</h2>
+    <p class="reveal">Al comprar, sí. A lo largo de los años, la cuenta se da vuelta: <strong>cero mantenimiento</strong> — sin pintura, sin selladores, sin reemplazar tablas podridas — y una durabilidad de décadas hacen que tu inversión se pague sola.</p>
+    <p class="reveal reveal-delay-1">La madera te la cobra todos los años. Zenplas, una sola vez.<br><strong>Hacé la cuenta con nosotros.</strong></p>
+    <div class="reveal reveal-delay-1" style="margin-top:32px;">
+      <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
+        Quiero presupuestar mi proyecto
+      </button>
     </div>
   </div>
 </section>
@@ -1749,7 +2052,67 @@
 
 </section>
 
-<!-- ─── INSTAGRAM ─── -->
+<!-- ─── CONTACTO ─── -->
+<section id="contacto" class="section-pad" aria-label="Ubicación y contacto Zenplas">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <span class="overline reveal">Contacto y ubicación</span>
+        <h2 class="section-headline reveal" style="margin-top:14px;margin-bottom:12px;">Construido para durar.<br>Diseñado para vivir.</h2>
+        <p class="section-sub reveal" style="margin-bottom:36px;">Visitanos en nuestra planta o escribinos por WhatsApp. Te asesoramos, medimos y cotizamos en el día.</p>
+
+        <div class="contact-detail reveal">
+          <div class="contact-detail-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <p>Dirección</p>
+            <p>Luis M. Campos 171, Bernal Oeste<br>Provincia de Buenos Aires</p>
+          </div>
+        </div>
+
+        <div class="contact-detail reveal reveal-delay-1">
+          <div class="contact-detail-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <p>WhatsApp</p>
+            <p>+54 9 11 2852-9114</p>
+          </div>
+        </div>
+
+        <div class="contact-detail reveal reveal-delay-2">
+          <div class="contact-detail-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <p>Horarios</p>
+            <p>Lunes a viernes: 8 a 17 hs<br>Sábados: 8 a 13 hs</p>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;" class="reveal reveal-delay-2">
+          <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+            Quiero presupuestar mi proyecto
+          </button>
+        </div>
+      </div>
+
+      <div class="contact-map reveal reveal-delay-1">
+        <iframe
+          src="https://maps.google.com/maps?q=Luis+M+Campos+171,+Bernal+Oeste,+Buenos+Aires,+Argentina&output=embed&z=15"
+          title="Ubicación de Zenplas en Luis M Campos 171, Bernal Oeste"
+          allowfullscreen
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INSTAGRAM (al final, sin CTA destacado — §4.5) ─── -->
 <section id="instagram" class="section-pad" aria-label="Zenplas en Instagram">
   <div class="container">
     <span class="overline reveal">Seguinos en Instagram</span>
@@ -1807,70 +2170,9 @@
   </div>
 
   <div class="ig-cta reveal">
-    <a href="https://www.instagram.com/zenplasmaderaplastica/reels/" class="btn-ig" target="_blank" rel="noopener" aria-label="Ver perfil de Zenplas en Instagram">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-      Ver todos nuestros videos
+    <a href="https://www.instagram.com/zenplasmaderaplastica/" target="_blank" rel="noopener" aria-label="Ver perfil de Zenplas en Instagram" style="color:var(--verde-c);font-family:'Montserrat',sans-serif;font-size:0.85rem;font-weight:600;letter-spacing:0.06em;text-decoration:none;">
+      @zenplasmaderaplastica →
     </a>
-  </div>
-</section>
-
-<!-- ─── CONTACTO ─── -->
-<section id="contacto" class="section-pad" aria-label="Ubicación y contacto Zenplas">
-  <div class="container">
-    <div class="contact-grid">
-      <div class="contact-info">
-        <span class="overline reveal">Contacto y ubicación</span>
-        <h2 class="section-headline reveal" style="margin-top:14px;margin-bottom:12px;">Construido para durar.<br>Diseñado para vivir.</h2>
-        <p class="section-sub reveal" style="margin-bottom:36px;">Visitanos en nuestra planta o escribinos por WhatsApp. Te asesoramos, medimos y cotizamos en el día.</p>
-
-        <div class="contact-detail reveal">
-          <div class="contact-detail-icon" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div class="contact-detail-text">
-            <p>Dirección</p>
-            <p>Luis M. Campos 171, Bernal Oeste<br>Provincia de Buenos Aires</p>
-          </div>
-        </div>
-
-        <div class="contact-detail reveal reveal-delay-1">
-          <div class="contact-detail-icon" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-          </div>
-          <div class="contact-detail-text">
-            <p>WhatsApp</p>
-            <p>+54 9 11 2852-9114</p>
-          </div>
-        </div>
-
-        <div class="contact-detail reveal reveal-delay-2">
-          <div class="contact-detail-icon" aria-hidden="true">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div class="contact-detail-text">
-            <p>Horarios</p>
-            <p>Lunes a viernes: 8 a 17 hs<br>Sábados: 8 a 13 hs</p>
-          </div>
-        </div>
-
-        <div style="margin-top:40px;" class="reveal reveal-delay-2">
-          <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" class="btn-wa" target="_blank" rel="noopener" aria-label="Iniciar conversación en WhatsApp">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
-            Iniciar conversación
-          </a>
-        </div>
-      </div>
-
-      <div class="contact-map reveal reveal-delay-1">
-        <iframe
-          src="https://maps.google.com/maps?q=Luis+M+Campos+171,+Bernal+Oeste,+Buenos+Aires,+Argentina&output=embed&z=15"
-          title="Ubicación de Zenplas en Luis M Campos 171, Bernal Oeste"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1898,11 +2200,12 @@
         <li><a href="https://wa.me/5491128529114" target="_blank" rel="noopener">+54 9 11 2852-9114</a></li>
         <li><a href="#contacto">Luis M. Campos 171</a></li>
         <li><a href="#contacto">Bernal Oeste, Bs. As.</a></li>
+        <li><span style="color:rgba(248,245,240,0.5);">L a V: 8–17 hs · Sáb: 8–13 hs</span></li>
       </ul>
     </div>
   </div>
   <div class="footer-bottom">
-    <p>© 2025 Zenplas. Todos los derechos reservados.</p>
+    <p>© 2026 Zenplas. Todos los derechos reservados.</p>
     <div class="footer-hashtags">
       <span>#Zenplas</span>
       <span>#PlásticoReciclado</span>
@@ -1912,10 +2215,66 @@
   </div>
 </footer>
 
-<!-- ─── WHATSAPP FLOTANTE ─── -->
+<!-- ─── STICKY CTA MOBILE (§2) ─── -->
+<div class="sticky-cta" id="stickyCta" role="complementary" aria-label="Pedir presupuesto">
+  <button type="button" class="btn-wa" data-zp-open-form aria-label="Abrir formulario de presupuesto">
+    Quiero presupuestar mi proyecto
+  </button>
+</div>
+
+<!-- ─── MODAL FORMULARIO PRE-WHATSAPP (§5) ─── -->
+<div class="zp-modal-overlay" id="zpModalOverlay" role="dialog" aria-modal="true" aria-labelledby="zpModalTitle">
+  <div class="zp-modal">
+    <button type="button" class="zp-modal-close" id="zpModalClose" aria-label="Cerrar formulario">✕</button>
+    <h3 id="zpModalTitle">Contanos de tu proyecto</h3>
+    <p class="zp-modal-sub">Te respondemos con la cotización en el día.</p>
+
+    <!-- Bono 5% (§7.3) — autorizado por supervisor 22/07/2026. IDs del script de Hivara. -->
+    <div class="zp-bono" id="bono-bloque">
+      <p class="zp-bono-copy">Completá el formulario antes de que termine el tiempo y sumá un <strong>5% extra</strong> en tu cotización.</p>
+      <div class="zp-bono-timer"><span id="minutes">05</span>:<span id="seconds">00</span></div>
+    </div>
+    <p class="zp-bono-registrado" id="bono-usado">✓ Tu 5% quedó registrado con el código <strong data-codigo></strong></p>
+
+    <form id="zpForm" novalidate>
+      <div class="zp-field">
+        <label for="zpNombre">Nombre</label>
+        <input type="text" id="zpNombre" name="nombre" autocomplete="name" required>
+      </div>
+      <div class="zp-field">
+        <label for="zpTel">WhatsApp</label>
+        <input type="tel" id="zpTel" name="tel" autocomplete="tel" inputmode="numeric" placeholder="11 2852-9114" required>
+      </div>
+      <div class="zp-field">
+        <label for="zpTipo">Tipo de proyecto</label>
+        <select id="zpTipo" name="tipo" required>
+          <option value="" disabled selected>Elegí una opción…</option>
+          <option value="deck">Deck / piso exterior</option>
+          <option value="cerco">Cerco o cerramiento</option>
+          <option value="pergola">Pérgola</option>
+          <option value="revestimiento">Revestimiento</option>
+          <option value="muebles">Muebles</option>
+          <option value="material">Solo material (listones)</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+      <div class="zp-field">
+        <label for="zpEmail">Email (opcional)</label>
+        <input type="email" id="zpEmail" name="email" autocomplete="email">
+      </div>
+      <p class="zp-form-error" id="zpFormError">Completá tu nombre, WhatsApp y tipo de proyecto.</p>
+      <button type="submit" class="btn-wa" id="zpSubmit">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        Continuar en WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ─── WHATSAPP FLOTANTE (fallback directo, §5) ─── -->
 <div class="wa-float" role="complementary" aria-label="Botón de WhatsApp">
   <div class="wa-float-label" aria-hidden="true">Consultanos sin compromiso</div>
-  <a href="https://wa.me/5491128529114?text=Hola%20Zenplas%2C%20quiero%20un%20presupuesto" class="wa-float-btn" target="_blank" rel="noopener" aria-label="Abrir WhatsApp con Zenplas">
+  <a href="https://wa.me/5491128529114?text=Quiero%20presupuestar%20mi%20proyecto" class="wa-float-btn" id="waFloatBtn" target="_blank" rel="noopener" aria-label="Abrir WhatsApp con Zenplas">
     <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 </div>
@@ -2006,9 +2365,163 @@
   })();
 </script>
 
+<!-- Tracking de atribución Hivara + bono 5% (script del dev, adaptado) -->
+<script src="zenplas-tracking.js"></script>
 
-<!-- Instagram embed script -->
-<script async defer src="//www.instagram.com/embed.js"></script>
+<script>
+// ═══════════════════════════════════════════════════════════
+//  ZENPLAS LANDING V2 — conversión y UI
+//  (atribución, bono y envío a /api/wa viven en zenplas-tracking.js)
+// ═══════════════════════════════════════════════════════════
+const ZP = {
+  PROYECTOS_REALIZADOS: 982,   // cifra real confirmada jul 2026 — actualizar acá cada 1-2 meses
+  GARANTIA_ANIOS: 10           // garantía confirmada jul 2026
+};
+
+// Al cargar: persistir _fbc si la visita trae fbclid + iniciar bono
+// (bono 5% autorizado por supervisor — 22/07/2026)
+getFBC();
+zpBonoInit();
+
+// ─── §3 CONTADORES ANIMADOS ───
+(function () {
+  // Constante única: el HTML toma la cifra desde ZP
+  const c1 = document.querySelector('#impacto .zp-counter[data-to="982"]');
+  if (c1) c1.dataset.to = ZP.PROYECTOS_REALIZADOS;
+
+  function animateCounter(el, from, to, ms = 1500, fmt = n => n.toLocaleString('es-AR')) {
+    const t0 = performance.now();
+    const ease = x => 1 - Math.pow(1 - x, 3);
+    (function tick(t) {
+      const p = Math.min((t - t0) / ms, 1);
+      el.textContent = fmt(Math.round(from + (to - from) * ease(p)));
+      if (p < 1) requestAnimationFrame(tick);
+    })(t0);
+  }
+
+  const io = new IntersectionObserver((entries) => entries.forEach(e => {
+    if (!e.isIntersecting || e.target.dataset.done) return;
+    e.target.dataset.done = 1;
+    animateCounter(e.target, +e.target.dataset.from, +e.target.dataset.to, 1500,
+      e.target.dataset.prefix ? n => e.target.dataset.prefix + n.toLocaleString('es-AR') : undefined);
+  }), { threshold: 0.5 });
+  document.querySelectorAll('.zp-counter').forEach(el => io.observe(el));
+})();
+
+// ─── §2 STICKY CTA MOBILE (25% de scroll) ───
+(function () {
+  const bar = document.getElementById('stickyCta');
+  if (!bar) return;
+  window.addEventListener('scroll', () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    bar.classList.toggle('show', max > 0 && window.scrollY / max >= 0.25);
+  }, { passive: true });
+})();
+
+// ─── §5 NORMALIZAR TELÉFONO ───
+function zpNormalizarTel(raw) {
+  let d = raw.replace(/\D/g, '');
+  if (d.startsWith('0')) d = d.slice(1);          // saca 0 inicial
+  if (d.startsWith('15')) d = d.slice(2);         // saca 15 viejo
+  if (!d.startsWith('54')) d = '549' + d;         // asume AR + celular
+  else if (!d.startsWith('549')) d = '549' + d.slice(2);
+  return d;
+}
+
+// ─── §5 MODAL ───
+(function () {
+  const overlay = document.getElementById('zpModalOverlay');
+  document.addEventListener('click', (e) => {
+    const opener = e.target.closest('[data-zp-open-form]');
+    if (opener) {
+      e.preventDefault();
+      overlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      const first = document.getElementById('zpNombre');
+      if (first) setTimeout(() => first.focus(), 120);
+    }
+  });
+  function close() {
+    overlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.getElementById('zpModalClose').addEventListener('click', close);
+  overlay.addEventListener('click', (e) => { if (e.target === overlay) close(); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+})();
+
+// ─── §5 + §7 SUBMIT DEL FORMULARIO → pixel + Hivara + CAPI + WhatsApp ───
+(function () {
+  const form = document.getElementById('zpForm');
+  const errEl = document.getElementById('zpFormError');
+  const btn = document.getElementById('zpSubmit');
+
+  form.addEventListener('submit', (ev) => {
+    ev.preventDefault();
+    const nombre = form.nombre.value.trim();
+    const telRaw = form.tel.value.trim();
+    const tipo = form.tipo.value;
+    if (!nombre || !telRaw || !tipo) { errEl.classList.add('show'); return; }
+    errEl.classList.remove('show');
+    btn.disabled = true;
+
+    const telefono = zpNormalizarTel(telRaw);
+    const email = form.email.value.trim().toLowerCase() || null;
+    const bonoVigente = zpBonoVigente();
+    const bonoEstado = bonoVigente ? '5pct' : 'vencido';
+
+    // 1. Coincidencias avanzadas manuales (Meta hashea automáticamente) + external_id compartido con Hivara
+    fbq('init', PIXEL_ID, {
+      fn: nombre.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s/g, ''),
+      ph: telefono,
+      ...(email && { em: email }),
+      external_id: generateClickId()
+    });
+
+    // 2. Mensaje según regla de negocio (§7.4) y marca de bono usado
+    const mensaje = bonoVigente
+      ? 'Ya completé mi formulario. Tengo un 5% extra en mi presupuesto.'
+      : 'Ya completé mi formulario.';
+    zpBonoMarcarUsado();
+
+    // 3. Lead: pixel con eventID + Hivara + CAPI + redirect (zenplas-tracking.js)
+    enviarPorApiWa(
+      mensaje,
+      getVisitorData({ nombre, telefono, email, tipo }),
+      'Lead',
+      { content_category: tipo, content_name: 'form_prewhatsapp', bono: bonoEstado },
+      bonoEstado
+    );
+  });
+})();
+
+// ─── §6 BOTÓN FLOTANTE → evento Contact + /api/wa ───
+(function () {
+  const btn = document.getElementById('waFloatBtn');
+  if (!btn) return;
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    fbq('init', PIXEL_ID, { external_id: generateClickId() });
+    enviarPorApiWa('Quiero presupuestar mi proyecto', getVisitorData(), 'Contact',
+      { content_name: 'whatsapp_directo' });
+  });
+})();
+
+// ─── §4.6 LAZY-LOAD INSTAGRAM EMBED ───
+(function () {
+  const section = document.getElementById('instagram');
+  if (!section) return;
+  const io = new IntersectionObserver((entries) => {
+    if (!entries.some(e => e.isIntersecting)) return;
+    io.disconnect();
+    const s = document.createElement('script');
+    s.async = true; s.defer = true;
+    s.src = 'https://www.instagram.com/embed.js';
+    document.body.appendChild(s);
+  }, { rootMargin: '400px 0px' });
+  io.observe(section);
+})();
+</script>
 
 </body>
 </html>
